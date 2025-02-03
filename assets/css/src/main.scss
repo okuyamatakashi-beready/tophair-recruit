@@ -1,0 +1,490 @@
+@use "./variables";
+@use "./reset";
+@use "./mixins";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*-------------------------
+    共通
+-------------------------*/
+
+.container_max {
+    @apply w-[95%] mx-auto;
+}
+.bg {
+    @apply bg-center bg-no-repeat bg-cover;
+}
+.button__type--a {
+    font-size: 12px;
+    color: #000;
+    width: 147px;
+    display: block;
+    
+    font-family: "Noto Sans JP", sans-serif;
+    div {
+        position: relative;
+        padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+        &::after {
+            content: "";
+            width: 6px;
+            height: 1px;
+            position: absolute;
+            transform: rotate(45deg);
+            right: 0;
+            bottom: 1px;
+            display: block;
+            background-color: #000;
+        }
+    }
+
+}
+.sec__ttl--big {
+    @apply text-center text-black text-[5rem] font-normal;
+    letter-spacing: 0.15em;
+}
+.vertical__center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+.fp-watermark {
+    display: none;
+}
+.salon__menu--list {
+    @apply  rounded-full text-black text-center text-1 py-1 border-solid border border-black block w-full;
+}
+
+/*-------------------------
+    header
+-------------------------*/
+
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    .container_max {
+        nav {
+            min-width: 880px;
+            ul {
+                li {
+                    font-size: 12px;
+                    display: block;
+                    font-family: "Noto Sans JP", sans-serif;
+                }
+            }
+            .nav__sns {
+                border-right: 1px solid #fff;
+                border-left: 1px solid #fff;
+            }
+        }
+    }
+}
+
+#toggle {
+    position: fixed;
+    top: 4.6rem;
+    right: 5%;
+    height: 8px;
+    z-index: 5000;
+    div {
+        span {
+            width: 30px;
+            background-color: #fff;
+            height: 1px;
+            position: absolute;
+            display: block;
+            &:nth-of-type(2) {
+                transform: translateY(8px);
+            }
+        }
+    }
+}
+
+
+/*-------------------------
+    concept
+-------------------------*/
+
+#concept {
+    .concept__container {
+        .concept__content {
+            h2 {
+                letter-spacing: 0.15em;
+            }
+            strong {
+                @media screen and (max-width: 768px) {
+                    font-size: 20px;
+                }
+            }
+        }
+        .concept__img--first {
+            background-image: url(./../../images/top/concept_img01.jpg);
+        }
+        .concept__img--second {
+            background-image: url(./../../images/top/concept_img02.jpg);
+        }
+    }
+}
+
+
+/*-------------------------
+    features
+-------------------------*/
+
+#features {
+    background-color: #E3DFDA;
+    .features__content {
+        .features__content--items {
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+            &:nth-of-type(1) {
+                background-image: url(./../../images/top/features_img01.jpg);
+            }
+            &:nth-of-type(2) {
+                background-image: url(./../../images/top/features_img02.jpg);
+            }
+            &:nth-of-type(3) {
+                background-image: url(./../../images/top/features_img03.jpg);
+            }
+            &:nth-of-type(4) {
+                background-image: url(./../../images/top/features_img04.jpg);
+            }
+        }
+    }
+}
+
+/*-------------------------
+    SALONS
+-------------------------*/
+#salons {
+    .salon__list {
+        li {
+            border-right: 1px solid #000;
+            &:last-of-type {
+                border-right: none;
+            }
+        }
+
+    }
+}
+
+/*-------------------------
+    SALONS
+-------------------------*/
+.salon__content {
+    box-sizing: border-box;
+    .fp-tableCell {
+        vertical-align: top;
+    }
+    .salons__thumb {
+        height: 74vh;
+    }
+    .tophairterrace {
+        background-image: url(./../../images/top/tophairterrace.jpg);
+    }
+    .tophairlounge {
+        background-image: url(./../../images/top/tophairlounge.jpg);
+    }
+    .salon__info {
+        width: 27%;
+        dl {
+            font-size: 1.5rem;
+            letter-spacing: 0.05em;
+            dt {
+                margin-right: 18px;
+                width: 10%;
+            }
+            dd {
+                img {
+                    margin-left: 8px;
+                }
+            }
+        }
+        ul {
+            li {
+                width: 30%;
+                font-size: 10px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    a.more {
+        width: 70px;
+        border-bottom: 1px solid #000;
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 12px;
+        padding-bottom: 6px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: 30px;
+    }
+}
+
+/*-------------------------
+    MENU
+-------------------------*/
+#menu {
+    .menu__wrap {
+        background-image: url(./../../images/top/menu_bg.jpg);
+        h2 {
+            left: 16rem;
+        }
+        &--list {
+            background: #fff;
+            box-sizing: border-box;
+            width: 43%;
+            padding-top: 9rem;
+            padding-left: 10rem;
+            padding-right: 5rem;
+            ul {
+                li {
+                    border-bottom: 1px solid #000;
+                    padding: 3rem 1rem;
+                    a {
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 100%;
+                        div {
+                            width: 50%;
+                            justify-content: space-between;
+                            align-items: center;
+                        }
+                        p {
+                            font-size: 2rem;
+                        }
+                        span {
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*-------------------------
+    NEWS
+-------------------------*/
+#news {
+    width: 74%;
+    margin: 17rem auto 0 auto;
+    h2 {
+        text-align: left;
+    }
+    dl {
+        border-top: 1px solid #000;
+        &:last-of-type {
+            border-bottom: 1px solid #000;
+        }
+        dt {
+            margin-bottom: 1.7rem;
+            span.time {
+                margin-right: 5rem;
+            }
+        }
+    }
+}
+
+/*-------------------------
+    GALLERY
+-------------------------*/
+#gallery {
+    padding-bottom: 36rem;
+    .gallery__bg {
+        background-image: url(./../../images/top/gallery.jpg);
+        padding-top: 160rem;
+        &--content {
+            width: 84%;
+            margin-right: auto;
+            margin-left: auto;
+            bottom: -30rem;
+            left: 0;
+            right: 0;
+            &--ttl {
+                ul {
+                    li{
+                        &:first-child {
+                            border-right: 1px solid #000;;
+                        }
+                    }
+                }
+            }
+        }
+        &--slider {
+            margin: 0 calc(50% - 42vw);
+            width: 92vw;
+            .swiper-slide {
+                width: 25%;
+                padding-top: 52rem;
+            }
+        }
+    }
+}
+
+/*-------------------------
+    studio
+-------------------------*/
+#studio {
+    .studio__container {
+        width: 74%;
+        background-image: url(./../../images/top/studio_bg.jpg);
+        h2 {
+            color: #fff;
+            line-height: 1;
+        }
+    }
+}
+
+
+/*-------------------------
+    studio
+-------------------------*/
+#recruit {
+    background: #E3DFDA;
+    .recruit__container {
+        width: 72%;
+    }
+    .recruit__content {
+        &--img {
+            background-image: url(./../../images/top/recruit_img.jpg);
+        }
+    }
+}
+
+/*-------------------------
+    whats
+-------------------------*/
+#whats {
+    .top {
+        height: 20rem;
+        overflow: hidden;
+        margin-top: -30rem;
+        &::before {
+            content: "";
+            width: 140vw;
+            height: 50rem;
+            background-color: #fff;
+            border-radius: 50%;
+            position: absolute;
+            top: 0rem;
+            left: -18%;
+            right: 0;
+            margin: auto;
+            z-index: 10;
+        }
+    }
+    .whats__container {
+        width: 74%;
+        a {
+            .whats__img {
+                background-image: url(./../../images/top/company_bg.jpg);
+            }
+            h2 {
+                color: #fff;
+            }
+        }
+        &--text {
+            color: #767676;
+            letter-spacing: 0.15em;
+
+        }
+        &--slider {
+            margin: 0 calc(50% - 50vw);
+            width: 100vw;
+            overflow: hidden;
+            .swiper-wrapper {
+                transition-timing-function: linear;
+            }
+            img {
+                margin-right: 20rem;
+            }
+        }
+        small {
+            font-size: 10px;
+            color: #000000;
+            margin-left: 38rem;
+        }
+    }
+
+}
+
+/*-------------------------
+    footer
+-------------------------*/
+#footer {
+    
+    #contact {
+        background-image: url(./../../images/common/contact_bg.jpg);
+        a {
+            border: 1px solid #fff;
+            width: 420px;
+            
+            h2 {
+                color: #fff;
+                line-height: 1;
+                font-size: 3rem;
+            }
+        }
+    }
+    .footer__content {
+        background-color: #E3DFDA;
+        .footer__wrapper {
+            width: 87%;
+            h2 {
+                text-align: left;
+            }
+            &--link {
+                border-top: 1px solid #000;
+                border-bottom: 1px solid #000;
+                .sitemap {
+                    ul {
+                        width: 30%;
+                        li {
+                            margin-bottom: 3rem;
+                            width: 50%;
+                            a {
+                                font-size: 1.5rem;
+                                span {
+                                    font-family: "Noto Sans JP", sans-serif;
+                                }
+                            }
+                        }
+                    }
+                    .reserve {
+                        a {
+                            width: 360px;
+                            border: 1px solid #000;
+                            color: #000;
+                        }
+                    }
+                }
+                .info__content {
+                    width: 62%;
+                    &--address {
+                        width: 42%;
+                    }
+                    &--sns {
+                        p {
+                            padding-right: 2.5rem;
+                            margin-right: 2.5rem;
+                            border-right: 1px solid #000;;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*-------------------------
+    固定ページ共通
+-------------------------*/
