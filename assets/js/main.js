@@ -11,7 +11,7 @@ const swiper = new Swiper(".swiper", {
     loop: true, // ループさせる
     allowTouchMove: false, // マウスでのスワイプを禁止
     speed:1500, // 少しゆっくり(デフォルトは300)
-    slidesPerView: 4.2,
+    slidesPerView: 1,
     autoplay: { // 自動再生
       delay: 5000, // 2秒後に次のスライド
       disableOnInteraction: false, // 矢印をクリックしても自動再生を止めない
