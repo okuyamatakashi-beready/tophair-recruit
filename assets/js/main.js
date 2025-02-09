@@ -19,18 +19,35 @@ const swiper = new Swiper(".swiper", {
     });
 
 
+const episwiper = new Swiper(".epi__slider", {
+    loop: true, // ループさせる
+    speed:1500, // 少しゆっくり(デフォルトは300)
+    slidesPerView: 1.8,
+    autoplay: { // 自動再生
+      delay: 5000, // 2秒後に次のスライド
+      disableOnInteraction: false, // 矢印をクリックしても自動再生を止めない
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
+
 /*
 	whats topのスライダー
 */
-const whats_swiper = new Swiper(".whats-swiper", {
+const bottomswiper = new Swiper(".bottom__slider", {
     loop: true, // ループさせる
     allowTouchMove: false, // マウスでのスワイプを禁止
-    speed:10000, // 少しゆっくり(デフォルトは300)
-    slidesPerView: 2,
+    speed:5000, // 少しゆっくり(デフォルトは300)
+    slidesPerView: 1,
     loopAdditionalSlides: 1,
     allowTouchMove: false, // スワイプ無効
-    autoplay: {
-        delay: 0, // 途切れなくループ
+
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
     },
 });
 /*
