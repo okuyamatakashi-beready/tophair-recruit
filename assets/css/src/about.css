@@ -1,4 +1,10 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "LINESeedJP";
+  src: url("../../../assets/fonts/LINESeedJP_A_OTF_Bd.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
@@ -16,9 +22,7 @@ button {
   cursor: pointer;
   outline: none;
   padding: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 /*要素のフォントサイズやマージン・パディングをリセットしています*/
@@ -49,7 +53,7 @@ html {
 }
 
 body {
-  font-family: "Cinzel", "Noto Serif JP", Arial, "Hiragino Sans", Meiryo, sans-serif;
+  font-family: "kozuka-gothic-pro", "LINESeedJP", "Noto Serif JP", Arial, "Hiragino Sans", Meiryo, sans-serif;
   font-size: 88%;
   line-height: 1.5;
   font-weight: 400;
@@ -164,8 +168,7 @@ input[type=button] {
   border-radius: 0;
   -webkit-box-sizing: content-box;
   -webkit-appearance: button;
-  -moz-appearance: button;
-       appearance: button;
+  appearance: button;
   border: none;
   box-sizing: border-box;
   cursor: pointer;
@@ -254,6 +257,7 @@ textarea {
 .challenge span {
   font-size: 22px;
   line-height: 1.6em;
+  font-family: "dnp-shuei-mincho-pr6n", sans-serif;
   position: relative;
   padding: 0px 5px;
   margin-top: -40px;
@@ -347,4 +351,4 @@ textarea {
 .company .map a img {
   display: inline-block;
   padding: 0 3px;
-}/*# sourceMappingURL=about.css.map */
+}

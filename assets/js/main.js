@@ -20,13 +20,11 @@ const swiper = new Swiper(".swiper", {
 
 
 const episwiper = new Swiper(".epi__slider", {
-    loop: true, // ループさせる
-    speed:1500, // 少しゆっくり(デフォルトは300)
-    slidesPerView: 1.8,
-    autoplay: { // 自動再生
-      delay: 5000, // 2秒後に次のスライド
-      disableOnInteraction: false, // 矢印をクリックしても自動再生を止めない
-    },
+    loop: true,
+    slidesPerView: 1.5, // スマホでは1枚を中央に、.5で見切れ具合を調整
+    spaceBetween:10,
+    centeredSlides : true,
+    initialSlide: 0,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -44,7 +42,7 @@ const bottomswiper = new Swiper(".bottom__slider", {
     slidesPerView: 1,
     loopAdditionalSlides: 1,
     allowTouchMove: false, // スワイプ無効
-
+centeredSlides : true,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,

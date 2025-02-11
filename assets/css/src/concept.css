@@ -1,4 +1,10 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "LINESeedJP";
+  src: url("../../../assets/fonts/LINESeedJP_A_OTF_Bd.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
@@ -49,7 +55,7 @@ html {
 }
 
 body {
-  font-family: "Cinzel", "Noto Serif JP", Arial, "Hiragino Sans", Meiryo, sans-serif;
+  font-family: "kozuka-gothic-pro", "LINESeedJP", "Noto Serif JP", Arial, "Hiragino Sans", Meiryo, sans-serif;
   font-size: 88%;
   line-height: 1.5;
   font-weight: 400;

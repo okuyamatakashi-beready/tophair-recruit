@@ -64,32 +64,65 @@ function theme_enqueue_scripts() {
         );
 
     }
-    if (is_page('gallery')) { // ページスラッグが 'gallery' の場合
+    if (is_page('story')) { // ページスラッグが 'gallery' の場合
         wp_enqueue_style(
-            'gallery-css',
-            get_template_directory_uri() . '/assets/css/dist/gallery.css',
+            'story-css',
+            get_template_directory_uri() . '/assets/css/dist/story.css',
             [],
-            filemtime(get_template_directory() . '/assets/css/dist/gallery.css')
+            filemtime(get_template_directory() . '/assets/css/dist/story.css')
         );
 
     }
-    if (is_page('faq')) { // ページスラッグが 'faq' の場合
+
+    if (is_page('interview')) { // ページスラッグが 'faq' の場合
         wp_enqueue_style(
-            'faq-css',
-            get_template_directory_uri() . '/assets/css/dist/faq.css',
+            'interview-css',
+            get_template_directory_uri() . '/assets/css/dist/interview.css',
             [],
-            filemtime(get_template_directory() . '/assets/css/dist/faq.css')
+            filemtime(get_template_directory() . '/assets/css/dist/interview.css')
         );
 
     }
-    if (is_singular('tophair-salon')) { // ページスラッグが 'faq' の場合
+    if (is_page('crosstalk')) { // ページスラッグが 'faq' の場合
         wp_enqueue_style(
-            'tophair-salon-css',
-            get_template_directory_uri() . '/assets/css/dist/tophair-salon.css',
+            'crosstalk-css',
+            get_template_directory_uri() . '/assets/css/dist/crosstalk.css',
             [],
-            filemtime(get_template_directory() . '/assets/css/dist/tophair-salon.css')
+            filemtime(get_template_directory() . '/assets/css/dist/crosstalk.css')
         );
 
     }
+    if (is_page('feature')) { // ページスラッグが 'faq' の場合
+        wp_enqueue_style(
+            'feature-css',
+            get_template_directory_uri() . '/assets/css/dist/feature.css',
+            [],
+            filemtime(get_template_directory() . '/assets/css/dist/feature.css')
+        );
+
+    }
+
+    if (is_singular('tophair-interview')) { // ページスラッグが 'faq' の場合
+        wp_enqueue_style(
+            'interview-css',
+            get_template_directory_uri() . '/assets/css/dist/interview.css',
+            [],
+            filemtime(get_template_directory() . '/assets/css/dist/interview.css')
+        );
+
+    }
+    $episode_pages = ['episode1', 'episode2', 'episode3', 'episode4', 'episode5', 'episode6', 'episode7', 'episode8', 'episode9'];
+
+    if (is_page($episode_pages)) {
+        wp_enqueue_style(
+            'story-css',
+            get_template_directory_uri() . '/assets/css/dist/story.css',
+            [],
+            filemtime(get_template_directory() . '/assets/css/dist/story.css')
+        );
+    }
+    
 }
+
 add_action('wp_enqueue_scripts', 'theme_enqueue_scripts');
+

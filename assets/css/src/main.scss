@@ -28,6 +28,7 @@
     display: block;
     border: 1px solid #000;
     transition: all 0.3s;
+    font-family: 'LINESeedJP', sans-serif;
     &:hover {
         background-color: #fff;
         color: #000
@@ -180,6 +181,7 @@
             }
             h2 {
                 letter-spacing: 0.1em;
+                font-family: "dnp-shuei-mincho-pr6n", sans-serif;
             }
         }
         #ourstory {
@@ -201,7 +203,6 @@
                     padding-bottom: 20rem;
                     position: relative;
                     .swiper-wrapper {
-                        padding-left: 40px;
                     }
                     .epi {
                         margin-right: 23px;
@@ -212,6 +213,7 @@
                                 font-size: 13px;
                                 letter-spacing: 0.05em;
                                 line-height: 1.5em;
+                                font-family: "dnp-shuei-mincho-pr6n", sans-serif;
                             }
                             p {
                                 font-size: 10px;
@@ -299,6 +301,7 @@
                                 padding: 2px 4px;
                                 background-color: #fff;
                                 margin-bottom: 8px;
+                                font-family: "kozuka-gothic-pro", sans-serif;
                             }
                             
                         }
@@ -306,6 +309,8 @@
                             width: 90%;
                             font-size: 10px;
                             line-height: 2;
+                            font-family: "kozuka-gothic-pro", sans-serif;
+                            font-weight: 300;
                         }
                     }
                     &:nth-of-type(1) {
@@ -341,6 +346,7 @@
                         font-size: 10px;
                         font-weight: bold;
                         letter-spacing: 0.1em;
+                        font-family: 'LINESeedJP', sans-serif;
                     }
                     figure {
                         figcaption {
@@ -353,6 +359,7 @@
                                 position: relative;
                                 line-height: 30px;
                                 font-size: 18px;
+                                font-family: 'LINESeedJP', sans-serif;
                                 &::before {
                                     content: "";
                                     background-image: url(./../../images/brackets-left.svg);
@@ -395,6 +402,7 @@
                 font-size: 35px;
                 line-height: 1;
                 margin-bottom: 20px;
+                font-family: 'LINESeedJP', sans-serif;
                 p {
                 }
                 span {
@@ -437,6 +445,7 @@
                         position: relative;
                         z-index: 10;
                         padding-right: 45px;
+                        font-family: 'LINESeedJP', sans-serif;
                     }
                     a {
                         display: block;
@@ -507,6 +516,7 @@
                 h2 {
                     font-size: 24px;
                     letter-spacing: 0.1em;
+                    font-family: 'LINESeedJP', sans-serif;
                 }
                 .footer__content {
                     ul {
@@ -518,6 +528,7 @@
                             padding-bottom: 20px;
                             padding-left: 49px;
                             padding-top: 20px;
+                            font-family: 'LINESeedJP', sans-serif;
                             a {
                                 width: 50%;
                                 color: #000;
@@ -538,6 +549,7 @@
                         font-size: 13px;
                         font-weight: bold;
                         margin-bottom: 20px;
+                        font-family: 'LINESeedJP', sans-serif;
                     }
                     ul {
                         margin-bottom: 30px;
@@ -733,6 +745,7 @@
                         font-weight: bold;
                         line-height: 1;
                         letter-spacing: 0.1em;
+                        font-family: 'LINESeedJP', sans-serif;
                         img {
                             margin-right: 29px;
                         }

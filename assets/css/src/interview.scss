@@ -1,0 +1,338 @@
+@use "./variables";
+@use "./reset";
+@use "./mixins";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@media screen and (min-width: 300px) {
+    #interview-page {
+        padding-top: 63px;
+        padding-bottom: 60px;
+        background: #F0F0F0;
+        strong {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        h1 {
+            font-size: 28px;
+            text-align: center;
+            letter-spacing: 0.1em;
+            margin-bottom: 40px;
+            width: 73%;
+            font-family: 'LINESeedJP', sans-serif;
+            span {
+                font-size: 12px;
+                font-family: "kozuka-gothic-pro", sans-serif;
+            }
+        }
+        .interview__wrapper {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .interview__content {
+                width: 245px;
+                margin-bottom: 22px;
+                &--item {
+                    .thumb {
+                        background-image: url(./../../images/interview01.jpg);
+                        height: 348px;
+                        margin-bottom: 20px;
+                        p {
+                            display: inline-block;
+                            line-height: 2em;
+                            font-size: 12px;
+                            position: absolute;
+                            bottom: 30px;
+                            left: 0;
+                        }
+                        
+                        p span {
+                            position: relative;
+                            display: inline-block;
+                            padding: 2px 4px;
+                            background-color: #fff;
+                            margin-bottom: 8px;
+                            font-family: "kozuka-gothic-pro", sans-serif;
+                        }
+                        
+                    }
+                    .text {
+                        width: 90%;
+                        font-size: 9px;
+                        line-height: 2;
+                        font-family: "kozuka-gothic-pro", sans-serif;
+                        font-weight: 300;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 300px) {
+    #interview-single {
+        padding-bottom: 60px;
+        background: #F0F0F0;
+        strong {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        h1 {
+            font-size: 28px;
+            text-align: center;
+            letter-spacing: 0.1em;
+            margin-bottom: 40px;
+            width: 73%;
+            font-family: 'LINESeedJP', sans-serif;
+            span {
+                font-size: 12px;
+                font-family: "kozuka-gothic-pro", sans-serif;
+            }
+        }
+        .interview__wrapper {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .interview__content {
+                width: 100%;
+                margin-bottom: 22px;
+                &--item {
+                    .thumb {
+                        background-image: url(./../../images/interview01.jpg);
+                        height: 553px;
+                        margin-bottom: 20px;
+                        p {
+                            display: inline-block;
+                            line-height: 2em;
+                            font-size: 18px;
+                            position: absolute;
+                            bottom: 30px;
+                            left: 0;
+                        }
+                        
+                        p span {
+                            position: relative;
+                            display: inline-block;
+                            padding: 2px 4px;
+                            background-color: #fff;
+                            margin-bottom: 8px;
+                            font-family: "kozuka-gothic-pro", sans-serif;
+                        }
+                        span.vertical {
+                            transform: rotate(90deg);
+                            font-size: 20px;
+                            font-family: 'LINESeedJP', sans-serif;
+                            font-weight: bold;
+                            position: absolute;
+                        }
+                        span.vertical01 {
+                            top: 85px;
+                            left: -53px;
+                        }
+                        span.vertical02 {
+                            bottom: 125px;
+                            right: -65px;
+                        }
+                        
+                    }
+                    .text {
+                        width: 90%;
+                        font-size: 9px;
+                        line-height: 2;
+                        font-family: "kozuka-gothic-pro", sans-serif;
+                        font-weight: 300;
+                        span.job {
+                            color: #fff;
+                            width: 170px;
+                            text-align: center;
+                            color: #fff;
+                            background-color: #000;
+                            font-size: 10px;
+                            line-height: 2em;
+                            display: block;
+                        }
+                        .profile {
+                            background: #fff;
+                            box-sizing: border-box;
+                            padding: 20px 22px 18px 25px;
+                            margin-bottom: 47px;
+                            .corner {
+                                position: absolute;
+                                width: 4px;
+                                height: 4px;
+                                background-color: black;
+                                border-radius: 50%;
+                            }
+                            /* 4隅に配置 */
+                            .top-left {
+                                top: 7px;
+                                left: 7px;
+                            }
+                            .top-right {
+                                top: 7px;
+                                right: 7px;
+                            }
+                            .bottom-left {
+                                bottom: 7px;
+                                left: 7px;
+                            }
+                            .bottom-right {
+                                bottom: 7px;
+                                right: 7px;
+                            }
+                            .flex {
+                                padding-bottom: 10px;
+                                border-bottom: 1px solid #000;
+                                .info {
+                                    width: 45px;
+                                    border-right: 1px dashed #000;
+                                    span {
+                                        font-size: 21px;
+                                        font-family: 'LINESeedJP', sans-serif;
+                                        letter-spacing: 0.1em;
+                                        line-height: 21px;
+                                        margin-bottom: 10px;
+                                        display:  inline-block;
+                                    }
+                                    ul {
+                                        margin-right: 10px;
+                                        li {
+                                            font-size: 10px;
+                                            font-family: 'LINESeedJP', sans-serif;
+                                            text-align: center;
+                                            font-weight: normal;
+                                        }
+                                    }
+                                }
+                                .profile_text {
+                                    width: calc(100% - 45px);
+                                    padding-left: 15px;
+                                    box-sizing: border-box;
+                                    p {
+                                        font-size: 15px;
+                                        line-height: 21px;
+                                        margin-bottom: 8px;
+                                        span {
+                                            font-size: 10px;
+                                            padding-left: 9px;
+                                            letter-spacing: 0.1em;
+                                            font-family: 'LINESeedJP', sans-serif;
+                                        }
+                                    }
+                                    ul {
+                                        li {
+                                            font-size: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                            p.introduce {
+                                padding-top: 10px;
+                                line-height: 2em;
+                                font-size: 10px;
+                            }
+                        }
+                    }
+
+                    .qa {
+                        
+                        background-color: #fff;
+                        .qa__content {
+                            width: 90%;
+                            padding-bottom: 30px;
+                            border-bottom: 1px solid #000;
+
+                            .question__wrapper {
+                                padding-top: 30px;
+                                span {
+                                    text-align: center;
+                                    font-size: 20px;
+                                    font-family: 'LINESeedJP', sans-serif;
+                                    display: block;
+                                    margin-bottom: 10px;
+                                }
+                                p {
+                                    text-align: center;
+                                    font-size: 18px;
+                                    margin-bottom: 20px;
+                                }
+                            }
+                            .answer__wrapper {
+                                .img {
+                                    width: 100%;
+                                    height: 217px;
+                                    margin-bottom: 20px;
+                                }
+                                p {
+                                    font-size: 12px;
+                                    line-height: 1.8em;
+                                }
+                            }
+                        }
+                    }
+
+                    .flow {
+                        background-color: #fff;
+                        figure {
+                            padding-top: 40px;
+                            padding-bottom: 30px;
+                            img {
+                                width: 90%;
+                            }
+                        }
+                        .flow__wrapper {
+                            background-color: #F0F0F0;
+                            padding-top: 40px;
+                            .flow__content {
+                                width: 90%;
+                                dl {
+                                    margin-bottom: 20px;
+                                    dt {
+                                        margin-right: 15px;
+                                        width: 50px;
+                                        span {
+                                            font-size: 10px;
+                                            font-family: 'LINESeedJP', sans-serif;
+                                            display: inline-block;
+                                            padding-right: 10px;
+                                        }
+                                    }
+                                    dd {
+                                        p {
+                                            font-size: 11px;
+                                            span {
+                                                font-size: 9px;
+                                            }
+                                        }
+                                    }
+                                }
+                                .flow__img {
+                                    margin-top: 40px;
+                                    .first {
+                                        width: 53%;
+                                        height: 226px;
+                                    }
+                                    .second {
+                                        width: 45%;
+                                        height: 226px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+        a.insta {
+            width: 90%;
+            display: block;
+            margin-top: 60px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+}

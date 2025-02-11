@@ -1,0 +1,155 @@
+@use "./variables";
+@use "./reset";
+@use "./mixins";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+#crosstalk {
+    background-color: #F0F0F0;
+    position: relative;
+    &::before {
+        content: "";
+        width: 100%;
+        background-color: #fff;
+        height: 150px;
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+    h1 {
+        font-size: 28px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        margin-bottom: 40px;
+        position: relative;
+        z-index: 10;
+        width: 73%;
+        font-family: 'LINESeedJP', sans-serif;
+        span {
+            font-size: 12px;
+            font-family: "kozuka-gothic-pro", sans-serif;
+        }
+    }
+
+    .thumb {
+        width: 90%;
+        height: 218px;
+        margin-bottom: 40px;
+        position: relative;
+        z-index: 10;
+    }
+
+    p.ttl {
+        font-size: 15px;
+        line-height: 2em;
+        text-align: center;
+        margin-bottom: 30px;
+        letter-spacing: 0.05em;
+    }
+
+    .stylist__wrapper {
+        background-color: #B6C7C7;
+        padding-top: 35px;
+        padding-bottom: 10px;
+        margin-bottom: 38px;
+        .stylist__content {
+            width: 90%;
+            .stylist {
+                width: 50%;
+                margin-bottom: 30px;
+                .img {
+                    width: 78px;
+                    height: 78px;
+                    border-radius: 250px;
+                    margin-right: 10px;
+                }
+                .info {
+                    p.job {
+                        font-size: 10px;
+                        margin-bottom: 4px;
+                    }
+                    p.name {
+                        font-size: 12px;
+                        margin-bottom: 5px;
+                    }
+                    p.name_en {
+                        font-size: 10px;
+                        margin-bottom: 10px;
+                        font-family: 'LINESeedJP', sans-serif;
+                    }
+                    p.salon {
+                        font-size: 10px;
+                    }
+                    p.from {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    p.theme {
+        font-size: 15px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        margin-bottom: 50px;
+    }
+
+    .talk__wrapper {
+        width: 90%;
+        
+        .talk__content {
+            width: 285px;
+            margin-bottom: 50px;
+            .img {
+                width: 50px;
+                margin-right: 15px;
+                .talker__thumb {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 250px;
+                    margin-bottom: 13px;
+                }
+                p {
+                    text-align: center;
+                    font-size: 10px;
+                }
+            }
+            p.talk {
+                font-size: 10px;
+                line-height: 2em;
+            }
+        }
+        .left {
+            margin-right: auto;
+        }
+        .right {
+            margin-left: auto;
+            .img {
+                margin-right: 0;
+                margin-left: 15px;
+            }
+        }
+    }
+    .between__img {
+        width: 100%;
+        height: 264px;
+        margin-bottom: 40px;
+    }
+
+    a.insta {
+        width: 90%;
+        display: block;
+        margin-top: 60px;
+        img {
+            width: 100%;
+        }
+    }
+    a.backtoTop {
+        width: 304px;
+        margin-top: 30px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

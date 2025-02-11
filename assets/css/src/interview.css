@@ -1,0 +1,524 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "LINESeedJP";
+  src: url("../../../assets/fonts/LINESeedJP_A_OTF_Bd.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* IE */
+main {
+  display: block;
+}
+
+/*font読み込み*/
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+/*要素のフォントサイズやマージン・パディングをリセットしています*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, p, q, samp,
+small, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+html {
+  font-size: 0.520835vw;
+  overflow: visible;
+}
+
+body {
+  font-family: "kozuka-gothic-pro", "LINESeedJP", "Noto Serif JP", Arial, "Hiragino Sans", Meiryo, sans-serif;
+  font-size: 88%;
+  line-height: 1.5;
+  font-weight: 400;
+  min-width: 1100px;
+  color: #2E1616;
+  text-align: justify;
+  background-color: #fff;
+  position: relative;
+  overflow: visible;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    min-width: 1px;
+  }
+}
+main {
+  display: block;
+}
+
+p img {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a.noneOutline {
+  outline: none;
+}
+
+/*新規追加要素のデフォルトはすべてインライン要素になっているので、section要素などをブロック要素へ変更しています*/
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, nav {
+  display: block;
+}
+
+/*nav要素内ulのマーカー（行頭記号）を表示しないようにしています*/
+ul {
+  list-style: none;
+}
+
+/*引用符の表示が出ないようにしています*/
+blockquote, q {
+  quotes: none;
+}
+
+a {
+  text-decoration: none;
+  color: #845b33;
+}
+
+a img {
+  border: none;
+}
+
+/*隣接するセルのボーダーを重ねて表示し、間隔を0に指定しています*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*水平罫線のデフォルトである立体的な罫線を見えなくしています*/
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  padding: 0;
+}
+
+/*縦方向の揃え位置を中央揃えに指定しています*/
+input, select {
+  vertical-align: middle;
+}
+
+/*画像を縦に並べたときに余白が出てしまわないように*/
+img {
+  vertical-align: bottom;
+}
+
+.clearfix:after {
+  content: "."; /* 新しい要素を作る */
+  display: block; /* ブロックレベル要素に */
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.clearfix {
+  min-height: 1px;
+}
+
+* html .clearfix {
+  height: 1px;
+  /*¥*/ /*/
+height: auto;
+overflow: hidden;
+/**/
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type=submit],
+input[type=button] {
+  border-radius: 0;
+  -webkit-box-sizing: content-box;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+       appearance: button;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  border: none;
+}
+
+input[type=date] {
+  border-radius: 0;
+  -webkit-box-sizing: content-box;
+  -webkit-appearance: button;
+  background-color: #fff;
+  height: 36px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+input[type=submit]::-webkit-search-decoration,
+input[type=button]::-webkit-search-decoration {
+  display: none;
+}
+
+input[type=submit]::focus,
+input[type=button]::focus {
+  outline-offset: -2px;
+}
+
+textarea {
+  border: none;
+  -webkit-appearance: none;
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: "NotoSansCJKjp";
+  font-style: normal;
+  font-weight: 900;
+  src: url("./../fonts/NotoSansCJKjp-Black.woff") format("woff");
+  font-display: swap;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@media screen and (min-width: 300px) {
+  #interview-page {
+    padding-top: 63px;
+    padding-bottom: 60px;
+    background: #F0F0F0;
+  }
+  #interview-page strong {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  #interview-page h1 {
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin-bottom: 40px;
+    width: 73%;
+    font-family: "LINESeedJP", sans-serif;
+  }
+  #interview-page h1 span {
+    font-size: 12px;
+    font-family: "kozuka-gothic-pro", sans-serif;
+  }
+  #interview-page .interview__wrapper {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #interview-page .interview__wrapper .interview__content {
+    width: 245px;
+    margin-bottom: 22px;
+  }
+  #interview-page .interview__wrapper .interview__content--item .thumb {
+    background-image: url(./../../images/interview01.jpg);
+    height: 348px;
+    margin-bottom: 20px;
+  }
+  #interview-page .interview__wrapper .interview__content--item .thumb p {
+    display: inline-block;
+    line-height: 2em;
+    font-size: 12px;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+  }
+  #interview-page .interview__wrapper .interview__content--item .thumb p span {
+    position: relative;
+    display: inline-block;
+    padding: 2px 4px;
+    background-color: #fff;
+    margin-bottom: 8px;
+    font-family: "kozuka-gothic-pro", sans-serif;
+  }
+  #interview-page .interview__wrapper .interview__content--item .text {
+    width: 90%;
+    font-size: 9px;
+    line-height: 2;
+    font-family: "kozuka-gothic-pro", sans-serif;
+    font-weight: 300;
+  }
+}
+@media screen and (min-width: 300px) {
+  #interview-single {
+    padding-bottom: 60px;
+    background: #F0F0F0;
+  }
+  #interview-single strong {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  #interview-single h1 {
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin-bottom: 40px;
+    width: 73%;
+    font-family: "LINESeedJP", sans-serif;
+  }
+  #interview-single h1 span {
+    font-size: 12px;
+    font-family: "kozuka-gothic-pro", sans-serif;
+  }
+  #interview-single .interview__wrapper {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #interview-single .interview__wrapper .interview__content {
+    width: 100%;
+    margin-bottom: 22px;
+  }
+  #interview-single .interview__wrapper .interview__content--item .thumb {
+    background-image: url(./../../images/interview01.jpg);
+    height: 553px;
+    margin-bottom: 20px;
+  }
+  #interview-single .interview__wrapper .interview__content--item .thumb p {
+    display: inline-block;
+    line-height: 2em;
+    font-size: 18px;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+  }
+  #interview-single .interview__wrapper .interview__content--item .thumb p span {
+    position: relative;
+    display: inline-block;
+    padding: 2px 4px;
+    background-color: #fff;
+    margin-bottom: 8px;
+    font-family: "kozuka-gothic-pro", sans-serif;
+  }
+  #interview-single .interview__wrapper .interview__content--item .thumb span.vertical {
+    transform: rotate(90deg);
+    font-size: 20px;
+    font-family: "LINESeedJP", sans-serif;
+    font-weight: bold;
+    position: absolute;
+  }
+  #interview-single .interview__wrapper .interview__content--item .thumb span.vertical01 {
+    top: 85px;
+    left: -53px;
+  }
+  #interview-single .interview__wrapper .interview__content--item .thumb span.vertical02 {
+    bottom: 125px;
+    right: -65px;
+  }
+  #interview-single .interview__wrapper .interview__content--item .text {
+    width: 90%;
+    font-size: 9px;
+    line-height: 2;
+    font-family: "kozuka-gothic-pro", sans-serif;
+    font-weight: 300;
+  }
+  #interview-single .interview__wrapper .interview__content--item .text span.job {
+    color: #fff;
+    width: 170px;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    font-size: 10px;
+    line-height: 2em;
+    display: block;
+  }
+  #interview-single .interview__wrapper .interview__content--item .text .profile {
+    background: #fff;
+    box-sizing: border-box;
+    padding: 20px 22px 18px 25px;
+    margin-bottom: 47px;
+    /* 4隅に配置 */
+  }
+  #interview-single .interview__wrapper .interview__content--item .text .profile .corner {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: black;
+    border-radius: 50%;
+  }
+  #interview-single .interview__wrapper .interview__content--item .text .profile .top-left {
+    top: 7px;
+    left: 7px;
+  }
+  #interview-single .interview__wrapper .interview__content--item .text .profile .top-right {
+    top: 7px;
+    right: 7px;
+  }
+  #interview-single .interview__wrapper .interview__content--item .text .profile .bottom-left {
+    bottom: 7px;
+    left: 7px;
+  }
+  #interview-single .interview__wrapper .interview__content--item .text .profile .bottom-right {
+    bottom: 7px;
+    right: 7px;
+  }
+  #interview-single .interview__wrapper .interview__content--item .text .profile .flex {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+  }
+  #interview-single .interview__wrapper .interview__content--item .text .profile .flex .info {
+    width: 45px;
+    border-right: 1px dashed #000;
+  }
+  #interview-single .interview__wrapper .interview__content--item .text .profile .flex .info span {
+    font-size: 21px;
+    font-family: "LINESeedJP", sans-serif;
+    letter-spacing: 0.1em;
+    line-height: 21px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  #interview-single .interview__wrapper .interview__content--item .text .profile .flex .info ul {
+    margin-right: 10px;
+  }
+  #interview-single .interview__wrapper .interview__content--item .text .profile .flex .info ul li {
+    font-size: 10px;
+    font-family: "LINESeedJP", sans-serif;
+    text-align: center;
+    font-weight: normal;
+  }
+  #interview-single .interview__wrapper .interview__content--item .text .profile .flex .profile_text {
+    width: calc(100% - 45px);
+    padding-left: 15px;
+    box-sizing: border-box;
+  }
+  #interview-single .interview__wrapper .interview__content--item .text .profile .flex .profile_text p {
+    font-size: 15px;
+    line-height: 21px;
+    margin-bottom: 8px;
+  }
+  #interview-single .interview__wrapper .interview__content--item .text .profile .flex .profile_text p span {
+    font-size: 10px;
+    padding-left: 9px;
+    letter-spacing: 0.1em;
+    font-family: "LINESeedJP", sans-serif;
+  }
+  #interview-single .interview__wrapper .interview__content--item .text .profile .flex .profile_text ul li {
+    font-size: 10px;
+  }
+  #interview-single .interview__wrapper .interview__content--item .text .profile p.introduce {
+    padding-top: 10px;
+    line-height: 2em;
+    font-size: 10px;
+  }
+  #interview-single .interview__wrapper .interview__content--item .qa {
+    background-color: #fff;
+  }
+  #interview-single .interview__wrapper .interview__content--item .qa .qa__content {
+    width: 90%;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #000;
+  }
+  #interview-single .interview__wrapper .interview__content--item .qa .qa__content .question__wrapper {
+    padding-top: 30px;
+  }
+  #interview-single .interview__wrapper .interview__content--item .qa .qa__content .question__wrapper span {
+    text-align: center;
+    font-size: 20px;
+    font-family: "LINESeedJP", sans-serif;
+    display: block;
+    margin-bottom: 10px;
+  }
+  #interview-single .interview__wrapper .interview__content--item .qa .qa__content .question__wrapper p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  #interview-single .interview__wrapper .interview__content--item .qa .qa__content .answer__wrapper .img {
+    width: 100%;
+    height: 217px;
+    margin-bottom: 20px;
+  }
+  #interview-single .interview__wrapper .interview__content--item .qa .qa__content .answer__wrapper p {
+    font-size: 12px;
+    line-height: 1.8em;
+  }
+  #interview-single .interview__wrapper .interview__content--item .flow {
+    background-color: #fff;
+  }
+  #interview-single .interview__wrapper .interview__content--item .flow figure {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  #interview-single .interview__wrapper .interview__content--item .flow figure img {
+    width: 90%;
+  }
+  #interview-single .interview__wrapper .interview__content--item .flow .flow__wrapper {
+    background-color: #F0F0F0;
+    padding-top: 40px;
+  }
+  #interview-single .interview__wrapper .interview__content--item .flow .flow__wrapper .flow__content {
+    width: 90%;
+  }
+  #interview-single .interview__wrapper .interview__content--item .flow .flow__wrapper .flow__content dl {
+    margin-bottom: 20px;
+  }
+  #interview-single .interview__wrapper .interview__content--item .flow .flow__wrapper .flow__content dl dt {
+    margin-right: 15px;
+    width: 50px;
+  }
+  #interview-single .interview__wrapper .interview__content--item .flow .flow__wrapper .flow__content dl dt span {
+    font-size: 10px;
+    font-family: "LINESeedJP", sans-serif;
+    display: inline-block;
+    padding-right: 10px;
+  }
+  #interview-single .interview__wrapper .interview__content--item .flow .flow__wrapper .flow__content dl dd p {
+    font-size: 11px;
+  }
+  #interview-single .interview__wrapper .interview__content--item .flow .flow__wrapper .flow__content dl dd p span {
+    font-size: 9px;
+  }
+  #interview-single .interview__wrapper .interview__content--item .flow .flow__wrapper .flow__content .flow__img {
+    margin-top: 40px;
+  }
+  #interview-single .interview__wrapper .interview__content--item .flow .flow__wrapper .flow__content .flow__img .first {
+    width: 53%;
+    height: 226px;
+  }
+  #interview-single .interview__wrapper .interview__content--item .flow .flow__wrapper .flow__content .flow__img .second {
+    width: 45%;
+    height: 226px;
+  }
+  #interview-single a.insta {
+    width: 90%;
+    display: block;
+    margin-top: 60px;
+  }
+  #interview-single a.insta img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=interview.css.map */

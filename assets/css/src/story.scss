@@ -1,0 +1,253 @@
+@use "./variables";
+@use "./reset";
+@use "./mixins";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.story__wrapper {
+    background-color: #F0F0F0;
+    padding-top: 60px;
+    h1 {
+        font-size: 28px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+        width: 73%;
+        font-family: 'LINESeedJP', sans-serif;
+        span {
+            font-size: 12px;
+            font-family: "kozuka-gothic-pro", sans-serif;
+        }
+    }
+    .container {
+        width: 73%;
+        .story__content {
+            border-top: 1px solid #000;
+            padding-top: 40px;
+
+            
+            a {
+                p.episode {
+                    span {
+                        text-decoration: underline;
+                        font-family: "aw-conqueror-didot", serif;
+                    }
+                    font-size: 12px;
+                    margin-bottom: 20px;
+                }
+                strong {
+                    display: block;
+                    line-height: 1.6em;
+                    font-size: 15px;
+                    font-family: "dnp-shuei-mincho-pr6n", sans-serif;
+                    font-weight: normal;
+                    letter-spacing: 0.1em;
+                    margin-bottom: 20px;
+                }
+                figure {
+                    margin-bottom: 20px;
+                }
+                ul {
+                    padding-bottom: 20px;
+                    li {
+                        font-family: "kozuka-gothic-pro", sans-serif;
+                        font-size: 10px;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+        .last__content {
+            border-bottom: 1px solid #000;
+        }
+        .backto {
+            padding-bottom: 20px;
+            a {
+                background-color: #fff;
+                width: 100%;
+                margin-top: 40px;
+            }
+            
+        }
+    }
+    .episode__wrapper {
+        figure.episode__mv {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #000;
+            margin-bottom: 30px;
+            img {
+                margin-bottom: 30px;
+            }
+            figcaption {
+                padding-bottom: 20px;
+                p {
+                    font-size: 15px;
+                    line-height: 2;
+                    font-family: "dnp-shuei-mincho-pr6n", sans-serif;
+                }
+            }
+        }
+        .profile {
+            margin-bottom: 40px;
+            figure {
+                width: 100px;
+                margin-right: 20px;
+            }
+            ul {
+                li {
+                    font-size: 10px;
+                    line-height: 1.6;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .episode__text {
+            font-size: 12px;
+            line-height: 2em;
+            margin-bottom: 50px;
+        }
+        .episode__img {
+
+        }
+    }
+}
+.episode__img {
+    &::before {
+        content: "";
+        width: 100%;
+        height: 160px;
+        background-color: #F0F0F0;
+        position: absolute;
+        top: -50px;
+        left: 0;
+    }
+    figure {
+        width: 73%;
+        z-index: 10;
+    }
+}
+.our__story {
+    background: #F5F0EA;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    &::before {
+        content: "";
+        background-color: #fff;
+        width: 100%;
+        height: 160px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .vertical {
+        position: absolute;
+        transform: rotate(90deg);
+        right: 0;
+        top: 260px;
+        span {
+            position: relative;
+            font-size: 15px;
+            font-family: 'LINESeedJP', sans-serif;
+            font-weight: bold;
+            &::before {
+                content: "";
+                background-color: #000;
+                top: 0;
+                bottom: 0;
+                height: 2px;
+                width: 115px;
+                position: absolute;
+                margin: auto;
+                left: -130px;
+            }
+        }
+    }
+    .container {
+        position: relative;
+        z-index: 10;
+        strong {
+            font-size: 25px;
+            line-height: 1.84em;
+            font-family: "dnp-shuei-mincho-pr6n", sans-serif;
+            font-weight: normal;
+            letter-spacing: 0.1em;
+            width: 73%;
+
+        }
+        p.text {
+            font-size: 14px;
+            width: 73%;
+            margion-top: 10px;
+        }
+        .epi__slider {
+            padding-bottom: 60px;
+            position: relative;
+            .swiper-wrapper {
+                padding-left: 40px;
+            }
+            .epi {
+                margin-right: 23px;
+                .epi__text {
+                    margin-top: -10px;
+                    padding-left: 25px;
+                    span {
+                        font-size: 13px;
+                        letter-spacing: 0.05em;
+                        line-height: 1.5em;
+                        font-family: "dnp-shuei-mincho-pr6n", sans-serif;
+                    }
+                    p {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+        .navigation {
+            position: absolute;
+            bottom: 0rem;
+            right: 0;
+            left: 0;
+            margin: auto;
+            .navigation__wrapper {
+                height: 10px;
+                &::after {
+                    content: "";
+                    width: 1px;
+                    height: 20px;
+                    background: #000;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    display: block;
+                    margin: auto;
+                    top: -7px;
+                }
+            }
+        }
+        .swiper-button-next {
+            right: 200px;
+            &:after {
+                background-image: url(./../../images/epi_arrow_next.svg);
+                background-size: 100%;
+                background-repeat: no-repeat;
+                content: "";
+                width: 15px;
+                height: 15px;
+            }
+        }
+        .swiper-button-prev {
+            left: 200px;
+            &:after {
+                background-image: url(./../../images/epi_arrow_prev.svg);
+                background-size: 100%;
+                background-repeat: no-repeat;
+                content: "";
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+}

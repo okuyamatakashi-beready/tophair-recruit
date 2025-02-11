@@ -19,7 +19,7 @@
                     </a>
                 </li>
                 <li class="flex items-center">
-                    <a href="">
+                    <a href="/about">
                         <div class="flex items-center justify-start">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer__arrow.svg" alt="" class="mr-2.5">
                             <span class="block">CONCEPT</span>
@@ -33,7 +33,7 @@
                     </a>
                 </li>
                 <li class="flex items-center">
-                    <a href="">
+                    <a href="/story">
                         <div class="flex items-center justify-start">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer__arrow.svg" alt="" class="mr-2.5">
                             <span class="block">STORY</span>
@@ -47,7 +47,7 @@
                     </a>
                 </li>
                 <li class="flex items-center">
-                    <a href="">
+                    <a href="/interview">
                         <div class="flex items-center justify-start">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer__arrow.svg" alt="" class="mr-2.5">
                             <span class="block">INTERVIEW</span>

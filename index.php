@@ -1,54 +1,6 @@
 <?php get_template_part('templates/header'); ?>
 <main id="main">
-    <div class="mainLeft fixed">
-        <div class="relative">
-            <div class="mainLeft__inner pt-17 relative">
-                <div class="mainLeft__inner--content">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" alt="" class="mainLeft__inner--logo mb-6 pl-12">
-                    <div class="mainLeft__slider relative mb-10">
-                        <strong class="block text-5 font-normal absolute">
-                            わたしより、<br>
-                            わたしを<br>
-                            信じてくれる<br>
-                            人がいる。
-                        </strong>
-                        <div class="swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide bg"></div>
-                                <div class="swiper-slide bg"></div>
-                                <div class="swiper-slide bg"></div>
-                                <div class="swiper-slide bg"></div>
-                                <div class="swiper-slide bg"></div>
-                                <div class="swiper-slide bg"></div>
-                                <div class="swiper-slide bg"></div>
-                                <div class="swiper-slide bg"></div>
-                                <div class="swiper-slide bg"></div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-
-            </div>
-            <div class="mainLeft__sns">
-                <span class="text-[11px] block">FOLLOW US｜</span>
-                <ul class="flex items-center justify-center">
-                    <li>
-                        <a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/insta-icon.svg" alt="" class=""></a>
-                    </li>
-                    <li>
-                        <a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/youtube-icon.svg" alt="" class=""></a>
-                    </li>
-                    <li>
-                        <a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/line-icon.svg" alt="" class=""></a>
-                    </li>
-                </ul>
-
-                <small class="block">©︎TOPHAIR All Rights Reserved</small>
-            </div>
-        </div>
-    </div>
+<?php get_template_part('templates/parts/main-left'); ?>
 
     <div class="mainCenter">
         <header id="header" class="w-full py-3.6 pl-2.8">
@@ -77,7 +29,7 @@
                     一番のお店であること。<br>
                     TOPHAIRのTOPは、その決意の表れです。
                 </p>
-                <a href="" class="read_more">
+                <a href="/about" class="read_more">
                     <span>READ MORE</span>
                 </a>
                 <div class="whats__content mt-6">
@@ -143,7 +95,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="epi epi02 swiper-slide">
+                        <div class="epi epi03 swiper-slide">
                             <figure>
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/epi03.jpg" alt="" class="w-full">
                             </figure>
@@ -158,7 +110,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="epi epi02 swiper-slide">
+                        <div class="epi epi04 swiper-slide">
                             <figure>
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/epi04.jpg" alt="" class="w-full">
                             </figure>
@@ -173,6 +125,7 @@
                                 </p>
                             </div>
                         </div>
+                       
                     </div>
                     <div class="navigation mb-4">
                         <div class="navigation__wrapper relative">
@@ -182,7 +135,7 @@
                     </div>
                     
                 </div>
-                <a href="" class="read_more mt-4">
+                <a href="/story" class="read_more mt-4">
                     <span>ALL STORIES</span>
                 </a>
 
@@ -260,7 +213,7 @@
 
             </div>
 
-            <a href="" class="read_more mt-4">
+            <a href="/interview" class="read_more mt-4">
                 <span>ALL STORIES</span>
             </a>
         </section>

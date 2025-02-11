@@ -1,0 +1,447 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "LINESeedJP";
+  src: url("../../../assets/fonts/LINESeedJP_A_OTF_Bd.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* IE */
+main {
+  display: block;
+}
+
+/*font読み込み*/
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+/*要素のフォントサイズやマージン・パディングをリセットしています*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, p, q, samp,
+small, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+html {
+  font-size: 0.520835vw;
+  overflow: visible;
+}
+
+body {
+  font-family: "kozuka-gothic-pro", "LINESeedJP", "Noto Serif JP", Arial, "Hiragino Sans", Meiryo, sans-serif;
+  font-size: 88%;
+  line-height: 1.5;
+  font-weight: 400;
+  min-width: 1100px;
+  color: #2E1616;
+  text-align: justify;
+  background-color: #fff;
+  position: relative;
+  overflow: visible;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    min-width: 1px;
+  }
+}
+main {
+  display: block;
+}
+
+p img {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a.noneOutline {
+  outline: none;
+}
+
+/*新規追加要素のデフォルトはすべてインライン要素になっているので、section要素などをブロック要素へ変更しています*/
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, nav {
+  display: block;
+}
+
+/*nav要素内ulのマーカー（行頭記号）を表示しないようにしています*/
+ul {
+  list-style: none;
+}
+
+/*引用符の表示が出ないようにしています*/
+blockquote, q {
+  quotes: none;
+}
+
+a {
+  text-decoration: none;
+  color: #845b33;
+}
+
+a img {
+  border: none;
+}
+
+/*隣接するセルのボーダーを重ねて表示し、間隔を0に指定しています*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*水平罫線のデフォルトである立体的な罫線を見えなくしています*/
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  padding: 0;
+}
+
+/*縦方向の揃え位置を中央揃えに指定しています*/
+input, select {
+  vertical-align: middle;
+}
+
+/*画像を縦に並べたときに余白が出てしまわないように*/
+img {
+  vertical-align: bottom;
+}
+
+.clearfix:after {
+  content: "."; /* 新しい要素を作る */
+  display: block; /* ブロックレベル要素に */
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.clearfix {
+  min-height: 1px;
+}
+
+* html .clearfix {
+  height: 1px;
+  /*¥*/ /*/
+height: auto;
+overflow: hidden;
+/**/
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type=submit],
+input[type=button] {
+  border-radius: 0;
+  -webkit-box-sizing: content-box;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+       appearance: button;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  border: none;
+}
+
+input[type=date] {
+  border-radius: 0;
+  -webkit-box-sizing: content-box;
+  -webkit-appearance: button;
+  background-color: #fff;
+  height: 36px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+input[type=submit]::-webkit-search-decoration,
+input[type=button]::-webkit-search-decoration {
+  display: none;
+}
+
+input[type=submit]::focus,
+input[type=button]::focus {
+  outline-offset: -2px;
+}
+
+textarea {
+  border: none;
+  -webkit-appearance: none;
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: "NotoSansCJKjp";
+  font-style: normal;
+  font-weight: 900;
+  src: url("./../fonts/NotoSansCJKjp-Black.woff") format("woff");
+  font-display: swap;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.story__wrapper {
+  background-color: #F0F0F0;
+  padding-top: 60px;
+}
+.story__wrapper h1 {
+  font-size: 28px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  width: 73%;
+  font-family: "LINESeedJP", sans-serif;
+}
+.story__wrapper h1 span {
+  font-size: 12px;
+  font-family: "kozuka-gothic-pro", sans-serif;
+}
+.story__wrapper .container {
+  width: 73%;
+}
+.story__wrapper .container .story__content {
+  border-top: 1px solid #000;
+  padding-top: 40px;
+}
+.story__wrapper .container .story__content a p.episode {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.story__wrapper .container .story__content a p.episode span {
+  text-decoration: underline;
+  font-family: "aw-conqueror-didot", serif;
+}
+.story__wrapper .container .story__content a strong {
+  display: block;
+  line-height: 1.6em;
+  font-size: 15px;
+  font-family: "dnp-shuei-mincho-pr6n", sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+}
+.story__wrapper .container .story__content a figure {
+  margin-bottom: 20px;
+}
+.story__wrapper .container .story__content a ul {
+  padding-bottom: 20px;
+}
+.story__wrapper .container .story__content a ul li {
+  font-family: "kozuka-gothic-pro", sans-serif;
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+.story__wrapper .container .last__content {
+  border-bottom: 1px solid #000;
+}
+.story__wrapper .container .backto {
+  padding-bottom: 20px;
+}
+.story__wrapper .container .backto a {
+  background-color: #fff;
+  width: 100%;
+  margin-top: 40px;
+}
+.story__wrapper .episode__wrapper figure.episode__mv {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #000;
+  margin-bottom: 30px;
+}
+.story__wrapper .episode__wrapper figure.episode__mv img {
+  margin-bottom: 30px;
+}
+.story__wrapper .episode__wrapper figure.episode__mv figcaption {
+  padding-bottom: 20px;
+}
+.story__wrapper .episode__wrapper figure.episode__mv figcaption p {
+  font-size: 15px;
+  line-height: 2;
+  font-family: "dnp-shuei-mincho-pr6n", sans-serif;
+}
+.story__wrapper .episode__wrapper .profile {
+  margin-bottom: 40px;
+}
+.story__wrapper .episode__wrapper .profile figure {
+  width: 100px;
+  margin-right: 20px;
+}
+.story__wrapper .episode__wrapper .profile ul li {
+  font-size: 10px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+.story__wrapper .episode__wrapper .episode__text {
+  font-size: 12px;
+  line-height: 2em;
+  margin-bottom: 50px;
+}
+.episode__img::before {
+  content: "";
+  width: 100%;
+  height: 160px;
+  background-color: #F0F0F0;
+  position: absolute;
+  top: -50px;
+  left: 0;
+}
+.episode__img figure {
+  width: 73%;
+  z-index: 10;
+}
+
+.our__story {
+  background: #F5F0EA;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+.our__story::before {
+  content: "";
+  background-color: #fff;
+  width: 100%;
+  height: 160px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.our__story .vertical {
+  position: absolute;
+  transform: rotate(90deg);
+  right: 0;
+  top: 260px;
+}
+.our__story .vertical span {
+  position: relative;
+  font-size: 15px;
+  font-family: "LINESeedJP", sans-serif;
+  font-weight: bold;
+}
+.our__story .vertical span::before {
+  content: "";
+  background-color: #000;
+  top: 0;
+  bottom: 0;
+  height: 2px;
+  width: 115px;
+  position: absolute;
+  margin: auto;
+  left: -130px;
+}
+.our__story .container {
+  position: relative;
+  z-index: 10;
+}
+.our__story .container strong {
+  font-size: 25px;
+  line-height: 1.84em;
+  font-family: "dnp-shuei-mincho-pr6n", sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  width: 73%;
+}
+.our__story .container p.text {
+  font-size: 14px;
+  width: 73%;
+  margion-top: 10px;
+}
+.our__story .container .epi__slider {
+  padding-bottom: 60px;
+  position: relative;
+}
+.our__story .container .epi__slider .swiper-wrapper {
+  padding-left: 40px;
+}
+.our__story .container .epi__slider .epi {
+  margin-right: 23px;
+}
+.our__story .container .epi__slider .epi .epi__text {
+  margin-top: -10px;
+  padding-left: 25px;
+}
+.our__story .container .epi__slider .epi .epi__text span {
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  line-height: 1.5em;
+  font-family: "dnp-shuei-mincho-pr6n", sans-serif;
+}
+.our__story .container .epi__slider .epi .epi__text p {
+  font-size: 10px;
+}
+.our__story .container .navigation {
+  position: absolute;
+  bottom: 0rem;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+.our__story .container .navigation .navigation__wrapper {
+  height: 10px;
+}
+.our__story .container .navigation .navigation__wrapper::after {
+  content: "";
+  width: 1px;
+  height: 20px;
+  background: #000;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: block;
+  margin: auto;
+  top: -7px;
+}
+.our__story .container .swiper-button-next {
+  right: 200px;
+}
+.our__story .container .swiper-button-next:after {
+  background-image: url(./../../images/epi_arrow_next.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  content: "";
+  width: 15px;
+  height: 15px;
+}
+.our__story .container .swiper-button-prev {
+  left: 200px;
+}
+.our__story .container .swiper-button-prev:after {
+  background-image: url(./../../images/epi_arrow_prev.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  content: "";
+  width: 15px;
+  height: 15px;
+}/*# sourceMappingURL=story.css.map */

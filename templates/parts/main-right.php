@@ -9,7 +9,7 @@
                     </a>
                 </li>
                 <li class="mb-2.5">
-                    <a href="" class="flex items-center justify-start">
+                    <a href="/about" class="flex items-center justify-start">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mainRight_arrow.svg" alt="" class="">
                         <span class="block">CONCEPT</span>
                     </a>
@@ -21,13 +21,13 @@
                     </a>
                 </li>
                 <li class="mb-2.5">
-                    <a href="" class="flex items-center justify-start">
+                    <a href="/interview" class="flex items-center justify-start">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mainRight_arrow.svg" alt="" class="">
                         <span class="block">INTERVIEW</span>
                     </a>
                 </li>
                 <li class="mb-2.5">
-                    <a href="" class="flex items-center justify-start">
+                    <a href="#stage" class="flex items-center justify-start">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mainRight_arrow.svg" alt="" class="">
                         <span class="block">OUR STAGE</span>
                     </a>
@@ -39,7 +39,7 @@
                     </a>
                 </li>
                 <li class="mb-2.5">
-                    <a href="" class="flex items-center justify-start">
+                    <a href="/crosstalk" class="flex items-center justify-start">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mainRight_arrow.svg" alt="" class="">
                         <span class="block">CROSSTALK</span>
                     </a>
