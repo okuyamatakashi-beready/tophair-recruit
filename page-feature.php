@@ -11,161 +11,38 @@
             </a>`
             </a>
         </div> -->
-        <section id="crosstalk" class=" relative">
-            <!-- <strong class="block absolute">Interview of</strong>
-            <strong class="block absolute">TOPHAIR people</strong> -->
+        <section id="feature" class=" relative">
+
             <h1 class="mx-auto">
-                CROSSTALK
-                <span class="block"># 3人のスタイリストによるクロストーク</span>
+                FEATURE
+                <span class="block"># TOP HAIRの特徴</span>
             </h1>
-            <?php 
-                $catch_img = get_field('catch_img');
-                $stylist = get_field('stylist');
-                $theme = get_field('theme');
-                $between_img = get_field('between_img');
 
-            ?>
-            <div class="thumb mx-auto" style="background-image: url(<?php echo $catch_img;?>)">
-
-            </div>
-
-            <p class="ttl">
-                3人のスタイリストによる<br>
-                赤裸々トーク！
-            </p>
-
-            <div class="stylist__wrapper">
-                <div class="stylist__content flex flex-wrap justify-between mx-auto">
-                    <?php if( have_rows('stylist') ): ?>
-                        <?php while( have_rows('stylist') ): the_row();
-                            $img = get_sub_field('img');
-                            $job = get_sub_field('job');
-                            $name = get_sub_field('name');
-                            $name_en = get_sub_field('name_en');
-                            $salon = get_sub_field('salon');
-                            $from = get_sub_field('from');
-                        ?>
-                    <div class="stylist flex items-center">
-                        <div class="img bg" style="background-image: url(<?php echo $img;?>)"></div>
-                        <div class="info">
-                            <p class="job"><?php echo $job;?></p>
-                            <p class="name"><?php echo $name;?></p>
-                            <p class="name_en"><?php echo $name_en;?></p>
-                            <p class="salon"><?php echo $salon;?></p>
-                            <p class="from"><?php echo $from;?>出身</p>
-                        </div>
+            <div class="feature__mv">
+                <div class="container-l relative mx-auto">
+                    <div class="mv__catch mx-auto">
+                        <p>
+                            <span>あなたの力を</span> <br>
+                            <span>最大限発揮できる</span> <br>
+                            <span>最高の環境が</span> <br>
+                            <span>ここにあります</span>
+                        </p>
                     </div>
 
-                    <?php endwhile;?>
-                    <?php endif; ?>
+                    <div class="container mx-auto">
+                        <figure>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/feature/feature_mv.png" alt="" class="mx-auto">
+                        </figure>
+                    </div>
                 </div>
             </div>
 
-            <p class="theme">ー<?php echo $theme;?>ー</p>
-
-            <div class="talk__wrapper mx-auto">
-                <?php if( have_rows('crosstalk01') ): ?>
-                    <?php while( have_rows('crosstalk01') ): the_row();
-                    ?>
-                    <?php if( have_rows('talker01') ): ?>
-                        <?php while( have_rows('talker01') ): the_row();
-                            $talker_img = get_sub_field('talker_img');
-                            $talker_name = get_sub_field('talker_name');
-                            $talk_content = get_sub_field('talk_content');
-                        ?>
-                <div class="talk__content left flex">
-                    <div class="img">
-                        <div class="talker__thumb bg" style="background-image: url(<?php echo $talker_img;?>)"></div>
-                        <p><?php echo $talker_name;?></p>
-                    </div>
-
-                    <p class="talk"><?php echo $talk_content;?></p>
-                </div>
-
-                <?php endwhile;?>
-                <?php endif; ?>
-                <?php endwhile;?>
-                <?php endif; ?>
-
-
-                <?php if( have_rows('crosstalk01') ): ?>
-                    <?php while( have_rows('crosstalk01') ): the_row();
-                    ?>
-                    <?php if( have_rows('talker02') ): ?>
-                        <?php while( have_rows('talker02') ): the_row();
-                            $talker_img = get_sub_field('talker_img');
-                            $talker_name = get_sub_field('talker_name');
-                            $talk_content = get_sub_field('talk_content');
-                        ?>
-                <div class="talk__content right flex">
-                    
-
-                    <p class="talk"><?php echo $talk_content;?></p>
-                    <div class="img">
-                        <div class="talker__thumb bg" style="background-image: url(<?php echo $talker_img;?>)"></div>
-                        <p><?php echo $talker_name;?></p>
-                    </div>
-                </div>
-
-                <?php endwhile;?>
-                <?php endif; ?>
-                <?php endwhile;?>
-                <?php endif; ?>
+            <div class="skill__wrapeer">
+                <strong class="ttl block text-center">-THREE SKILL-</strong>
             </div>
 
-            <div class="between__img bg" style="background-image: url(<?php echo $between_img;?>)">
 
-            </div>
-
-            <div class="talk__wrapper mx-auto">
-                <?php if( have_rows('crosstalk02') ): ?>
-                    <?php while( have_rows('crosstalk02') ): the_row();
-                    ?>
-                    <?php if( have_rows('talker01') ): ?>
-                        <?php while( have_rows('talker01') ): the_row();
-                            $talker_img = get_sub_field('talker_img');
-                            $talker_name = get_sub_field('talker_name');
-                            $talk_content = get_sub_field('talk_content');
-                        ?>
-                <div class="talk__content left flex">
-                    <div class="img">
-                        <div class="talker__thumb bg" style="background-image: url(<?php echo $talker_img;?>)"></div>
-                        <p><?php echo $talker_name;?></p>
-                    </div>
-
-                    <p class="talk"><?php echo $talk_content;?></p>
-                </div>
-
-                <?php endwhile;?>
-                <?php endif; ?>
-                <?php endwhile;?>
-                <?php endif; ?>
-
-
-                <?php if( have_rows('crosstalk02') ): ?>
-                    <?php while( have_rows('crosstalk02') ): the_row();
-                    ?>
-                    <?php if( have_rows('talker02') ): ?>
-                        <?php while( have_rows('talker02') ): the_row();
-                            $talker_img = get_sub_field('talker_img');
-                            $talker_name = get_sub_field('talker_name');
-                            $talk_content = get_sub_field('talk_content');
-                        ?>
-                <div class="talk__content right flex">
-                    
-
-                    <p class="talk"><?php echo $talk_content;?></p>
-                    <div class="img">
-                        <div class="talker__thumb bg" style="background-image: url(<?php echo $talker_img;?>)"></div>
-                        <p><?php echo $talker_name;?></p>
-                    </div>
-                </div>
-
-                <?php endwhile;?>
-                <?php endif; ?>
-                <?php endwhile;?>
-                <?php endif; ?>
-            </div>
+            
 
 
 

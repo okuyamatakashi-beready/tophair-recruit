@@ -1,0 +1,80 @@
+@use "./variables";
+@use "./reset";
+@use "./mixins";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#feature {
+    padding-top: 63px;
+    padding-bottom: 60px;
+    background: #EDEAE2;
+    z-index: 10;
+    &::before {
+        content: "";
+        width: 100%;
+        height: 260px;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    strong {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    h1 {
+        font-size: 28px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        margin-bottom: 40px;
+        position: relative;
+        z-index: 10;
+        width: 73%;
+        font-family: 'LINESeedJP', sans-serif;
+        span {
+            font-size: 12px;
+            font-family: "kozuka-gothic-pro", sans-serif;
+        }
+    }
+    .feature__mv {
+        position: relative;
+        z-index: 10;
+        padding-bottom: 123px;
+        .container-l {
+            width: 90%;
+            .container {
+                width: 95%;
+            }
+            .mv__catch {
+                position: absolute;
+                bottom: -90px;
+                left: 0;
+                p {
+                    display: inline-block;
+                    line-height: 2em;
+                    font-family: "dnp-shuei-mincho-pr6n", sans-serif;
+                    font-size: 22px;
+                }
+                
+                p span {
+                    position: relative;
+                    display: inline-block;
+                    padding: 2px 4px;
+                    background-color: #fff;
+                    margin-bottom: 8px;
+                    font-family: "kozuka-gothic-pro", sans-serif;
+                }
+            }
+        }
+    }
+    .skill__wrapeer {
+        padding-top: 35px;
+        background: #fff;
+        strong {
+            font-size: 15px;
+
+        }
+    }
+}
