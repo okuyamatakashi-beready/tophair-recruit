@@ -101,6 +101,33 @@ function theme_enqueue_scripts() {
         );
 
     }
+    if (is_page('skill')) { // ページスラッグが 'faq' の場合
+        wp_enqueue_style(
+            'skill-css',
+            get_template_directory_uri() . '/assets/css/dist/skill.css',
+            [],
+            filemtime(get_template_directory() . '/assets/css/dist/skill.css')
+        );
+
+    }
+    if (is_page('recruit')) { // ページスラッグが 'faq' の場合
+        wp_enqueue_style(
+            'recruit-css',
+            get_template_directory_uri() . '/assets/css/dist/recruit.css',
+            [],
+            filemtime(get_template_directory() . '/assets/css/dist/recruit.css')
+        );
+
+    }
+    if (is_page('contact')) { // ページスラッグが 'faq' の場合
+        wp_enqueue_style(
+            'recruit-css',
+            get_template_directory_uri() . '/assets/css/dist/recruit.css',
+            [],
+            filemtime(get_template_directory() . '/assets/css/dist/recruit.css')
+        );
+
+    }
 
     if (is_singular('tophair-interview')) { // ページスラッグが 'faq' の場合
         wp_enqueue_style(

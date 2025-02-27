@@ -8,7 +8,6 @@
 
 #feature {
     padding-top: 63px;
-    padding-bottom: 60px;
     background: #EDEAE2;
     z-index: 10;
     &::before {
@@ -74,7 +73,182 @@
         background: #fff;
         strong {
             font-size: 15px;
-
+            margin-bottom: 35px;
         }
+    }
+    .skill__content {
+        padding-bottom: 60px;
+        figure {
+            margin-bottom: 40px;
+            img {
+                width: 100%;
+            }
+        }
+        .skill__container {
+            width: 90%;
+            .number {
+                text-align: center;
+                margin-bottom: 30px;
+                font-weight: bold;
+                span {
+                    padding-bottom: 10px;
+                    border-bottom: 2px solid #000;
+                    font-size: 11px;
+                    b {
+                        font-size: 21px;
+                        padding-left: 5px;
+                    }
+                }
+            }
+            .copy {
+                margin-bottom: 40px;
+                background-image: url(../../../assets/images/feature/kakko.png);
+                background-size: 100%;
+                background-position: center center;
+                background-repeat: no-repeat;
+                padding: 15px 0;
+                p {
+                    font-size: 18px;
+                    text-align: center;
+                    line-height: 1.8;
+                    letter-spacing: 0.1em;
+                }
+            }
+            p.text {
+                font-size: 13px;
+                width: 80%;
+                margin-bottom: 30px;
+            }
+            .award {
+                width: 80%;
+                padding: 18px 0;
+                border: 2px solid #000;
+                p {
+                    font-size: 10px;
+                    text-align: center;
+                    
+                }
+            }
+        }
+    }
+
+    .goodpoint {
+        padding-top: 80px;
+        background-color: #F0F0F0;
+        strong {
+            display: block;
+            position: absolute;
+            font-family: 'LINESeedJP', sans-serif;
+            top: -15px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            text-align: center;
+            font-size: 30px;
+            line-height: 1;
+        }
+        .container {
+            width: 90%;
+            overflow: hidden;
+            padding-bottom: 40px;
+            span.ttl {
+                display: block;
+                background: #000;
+                color: #fff;
+                text-align: center;
+                font-size: 18px;
+                padding: 10px;
+                width: 100%;
+                margin-bottom: 10px;
+                font-weight: normal;
+            }
+            .goodpoint__slider {
+                margin-bottom: 10px;
+                .navigation {
+                    top: 50%;
+                    width: 100%;
+                    .navigation__wrapper {
+                        width: 100%;
+                    }
+                }
+                /* Swiperのデフォルトアイコンを非表示 */
+                .swiper-button-next::after,
+                .swiper-button-prev::after {
+                    display: none;
+                }
+
+                /* Nextボタン（右矢印） */
+                .swiper-button-next {
+                    background-image: url("../../../assets/images/feature/next.png");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 16px; /* 画像サイズに合わせて調整 */
+                    height: 16px;
+                    right: 0px; /* 位置調整 */
+                    position: absolute;
+                }
+
+                /* Prevボタン（左矢印） */
+                .swiper-button-prev {
+                    background-image: url("../../../assets/images/feature/prev.png");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 16px; /* 画像サイズに合わせて調整 */
+                    height: 16px;
+                    left: 0px; /* 位置調整 */
+                    position: absolute;
+                }
+
+            }
+            h3 {
+                text-align: center;
+                font-size: 18px;
+                font-weight: normal;
+                line-height: 1.7em;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 12px;
+                line-height: 1.8em;
+            }
+        }
+        .other__point {
+            border-bottom: 1px solid #000;
+            margin-bottom: 35px;
+            .flex {
+                div {
+                    margin-bottom: 30px;
+                    width: 49%;
+                    span {
+                        display: block;
+                        font-weight: 500;
+                        background: #000;
+                        color: #fff;
+                        text-align: center;
+                        font-size: 18px;
+                        padding: 10px;
+                        width: 100%;
+                        margin-bottom: 15px;
+                        font-weight: normal;
+                    }
+                    figure {
+                        margin-bottom: 20px;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    p {
+                        width: 80%;
+                        margin: 0 auto;
+                        font-size: 12px;
+                        line-height: 1.6em;
+                    }
+                }
+            }
+        }
+    }
+    .insta {
+        margin-bottom: 50px;
+        display: block;
     }
 }

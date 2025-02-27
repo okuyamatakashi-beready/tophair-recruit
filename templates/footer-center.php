@@ -25,7 +25,7 @@
                             <span class="block">CONCEPT</span>
                         </div>
                     </a>
-                    <a href="">
+                    <a href="/skill">
                         <div class="flex items-center justify-start">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer__arrow.svg" alt="" class="mr-2.5">
                             <span class="block">SKILL UP</span>
@@ -53,7 +53,7 @@
                             <span class="block">INTERVIEW</span>
                         </div>
                     </a>
-                    <a href="">
+                    <a href="/recruit">
                         <div class="flex items-center justify-start">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer__arrow.svg" alt="" class="mr-2.5">
                             <span class="block">RECRUIT</span>
@@ -61,13 +61,13 @@
                     </a>
                 </li>
                 <li class="flex items-center">
-                    <a href="">
+                    <a href="/stage">
                         <div class="flex items-center justify-start">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer__arrow.svg" alt="" class="mr-2.5">
                             <span class="block">OUR STAGE</span>
                         </div>
                     </a>
-                    <a href="">
+                    <a href="/contact">
                         <div class="flex items-center justify-start">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer__arrow.svg" alt="" class="mr-2.5">
                             <span class="block">CONTACT</span>
@@ -75,7 +75,7 @@
                     </a>
                 </li>
                 <li class="flex items-center">
-                    <a href="">
+                    <a href="/crosstalk">
                         <div class="flex items-center justify-start">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer__arrow.svg" alt="" class="mr-2.5">
                             <span class="block">CROSS TALK</span>

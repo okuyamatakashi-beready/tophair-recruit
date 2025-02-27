@@ -1,3 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="7.608" height="7.608" viewBox="0 0 7.608 7.608">
-  <path id="多角形_1" data-name="多角形 1" d="M3.8,0l3.8,7.608H0Z" transform="translate(7.608) rotate(90)"/>
-</svg>
+<svg height="7.608" viewBox="0 0 7.608 7.608" width="7.608" xmlns="http://www.w3.org/2000/svg"><path d="m3.8 0 3.8 7.608h-7.6z" transform="matrix(0 1 -1 0 7.608 0)"/></svg>

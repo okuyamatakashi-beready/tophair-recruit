@@ -1,6 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="11.324" height="6.374" viewBox="0 0 11.324 6.374">
-  <g id="epi_arrow_prev" transform="translate(0.679 0.707)">
-    <line id="線_8" data-name="線 8" x1="10.145" transform="translate(0 2.48)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1"/>
-    <path id="パス_9560" data-name="パス 9560" d="M1187.317,1866.026l-2.48,2.48,2.48,2.48" transform="translate(-1184.808 -1866.026)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1"/>
-  </g>
-</svg>
+<svg height="6.374" viewBox="0 0 11.324 6.374" width="11.324" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="#000" stroke-linecap="round"><path d="m10.824 3.187h-10.145"/><path d="m1187.317 1866.026-2.48 2.48 2.48 2.48" transform="translate(-1184.129 -1865.319)"/></g></svg>

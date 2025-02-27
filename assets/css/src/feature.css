@@ -22,9 +22,7 @@ button {
   cursor: pointer;
   outline: none;
   padding: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 /*要素のフォントサイズやマージン・パディングをリセットしています*/
@@ -170,8 +168,7 @@ input[type=button] {
   border-radius: 0;
   -webkit-box-sizing: content-box;
   -webkit-appearance: button;
-  -moz-appearance: button;
-       appearance: button;
+  appearance: button;
   border: none;
   box-sizing: border-box;
   cursor: pointer;
@@ -216,7 +213,6 @@ textarea {
 @tailwind utilities;
 #feature {
   padding-top: 63px;
-  padding-bottom: 60px;
   background: #EDEAE2;
   z-index: 10;
 }
@@ -283,4 +279,173 @@ textarea {
 }
 #feature .skill__wrapeer strong {
   font-size: 15px;
-}/*# sourceMappingURL=feature.css.map */
+  margin-bottom: 35px;
+}
+#feature .skill__content {
+  padding-bottom: 60px;
+}
+#feature .skill__content figure {
+  margin-bottom: 40px;
+}
+#feature .skill__content figure img {
+  width: 100%;
+}
+#feature .skill__content .skill__container {
+  width: 90%;
+}
+#feature .skill__content .skill__container .number {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+#feature .skill__content .skill__container .number span {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #000;
+  font-size: 11px;
+}
+#feature .skill__content .skill__container .number span b {
+  font-size: 21px;
+  padding-left: 5px;
+}
+#feature .skill__content .skill__container .copy {
+  margin-bottom: 40px;
+  background-image: url(../../../assets/images/feature/kakko.png);
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 15px 0;
+}
+#feature .skill__content .skill__container .copy p {
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.8;
+  letter-spacing: 0.1em;
+}
+#feature .skill__content .skill__container p.text {
+  font-size: 13px;
+  width: 80%;
+  margin-bottom: 30px;
+}
+#feature .skill__content .skill__container .award {
+  width: 80%;
+  padding: 18px 0;
+  border: 2px solid #000;
+}
+#feature .skill__content .skill__container .award p {
+  font-size: 10px;
+  text-align: center;
+}
+#feature .goodpoint {
+  padding-top: 80px;
+  background-color: #F0F0F0;
+}
+#feature .goodpoint strong {
+  display: block;
+  position: absolute;
+  font-family: "LINESeedJP", sans-serif;
+  top: -15px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  font-size: 30px;
+  line-height: 1;
+}
+#feature .goodpoint .container {
+  width: 90%;
+  overflow: hidden;
+  padding-bottom: 40px;
+}
+#feature .goodpoint .container span.ttl {
+  display: block;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+#feature .goodpoint .container .goodpoint__slider {
+  margin-bottom: 10px;
+  /* Swiperのデフォルトアイコンを非表示 */
+  /* Nextボタン（右矢印） */
+  /* Prevボタン（左矢印） */
+}
+#feature .goodpoint .container .goodpoint__slider .navigation {
+  top: 50%;
+  width: 100%;
+}
+#feature .goodpoint .container .goodpoint__slider .navigation .navigation__wrapper {
+  width: 100%;
+}
+#feature .goodpoint .container .goodpoint__slider .swiper-button-next::after,
+#feature .goodpoint .container .goodpoint__slider .swiper-button-prev::after {
+  display: none;
+}
+#feature .goodpoint .container .goodpoint__slider .swiper-button-next {
+  background-image: url("../../../assets/images/feature/next.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 16px; /* 画像サイズに合わせて調整 */
+  height: 16px;
+  right: 0px; /* 位置調整 */
+  position: absolute;
+}
+#feature .goodpoint .container .goodpoint__slider .swiper-button-prev {
+  background-image: url("../../../assets/images/feature/prev.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 16px; /* 画像サイズに合わせて調整 */
+  height: 16px;
+  left: 0px; /* 位置調整 */
+  position: absolute;
+}
+#feature .goodpoint .container h3 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.7em;
+  margin-bottom: 20px;
+}
+#feature .goodpoint .container p {
+  font-size: 12px;
+  line-height: 1.8em;
+}
+#feature .goodpoint .other__point {
+  border-bottom: 1px solid #000;
+  margin-bottom: 35px;
+}
+#feature .goodpoint .other__point .flex div {
+  margin-bottom: 30px;
+  width: 49%;
+}
+#feature .goodpoint .other__point .flex div span {
+  display: block;
+  font-weight: 500;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+#feature .goodpoint .other__point .flex div figure {
+  margin-bottom: 20px;
+}
+#feature .goodpoint .other__point .flex div figure img {
+  width: 100%;
+}
+#feature .goodpoint .other__point .flex div p {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 1.6em;
+}
+#feature .insta {
+  margin-bottom: 50px;
+  display: block;
+}

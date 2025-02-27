@@ -31,6 +31,17 @@ const episwiper = new Swiper(".epi__slider", {
     },
 });
 
+const goodpointslider = new Swiper(".goodpoint__slider", {
+    loop: true,
+    slidesPerView: 1, // スマホでは1枚を中央に、.5で見切れ具合を調整
+    centeredSlides : false,
+    initialSlide: 0,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
 
 /*
 	whats topのスライダー
@@ -106,3 +117,39 @@ $(document).ready(function(){
         $(this).find("dt").toggleClass("open");
     });
 });
+
+
+/*
+	リクルートのタブ切り替え
+*/
+
+document.addEventListener("DOMContentLoaded", function() {
+    const tabs = document.querySelectorAll(".ttl ul li"); // タブ要素
+    const contents = document.querySelectorAll(".content > div"); // .content 内の div のみ対象
+    const recruitImage = document.getElementById("recruitImage"); // 画像の要素
+
+    tabs.forEach(tab => {
+        tab.addEventListener("click", function() {
+            const targetClass = this.getAttribute("data-target");
+            const imageSrc = this.getAttribute("data-image"); // 画像の切り替え用
+
+            // タブのアクティブ状態をリセット
+            tabs.forEach(t => t.classList.remove("active"));
+            this.classList.add("active");
+
+            // 画像を切り替え
+            if (recruitImage) {
+                recruitImage.src = imageSrc;
+            }
+
+            // .content 内の div のみ hidden を切り替え
+            contents.forEach(content => {
+                content.classList.add("hidden");
+                if (content.classList.contains(targetClass)) {
+                    content.classList.remove("hidden");
+                }
+            });
+        });
+    });
+});
+

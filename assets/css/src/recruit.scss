@@ -1,0 +1,93 @@
+@use "./variables";
+@use "./reset";
+@use "./mixins";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+    width: 87%;
+    margin: auto;
+}
+#recruit {
+    h1 {
+        font-size: 28px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        margin-bottom: 40px;
+        position: relative;
+        z-index: 10;
+        width: 73%;
+        font-family: 'LINESeedJP', sans-serif;
+        span {
+            font-size: 12px;
+            font-family: "kozuka-gothic-pro", sans-serif;
+        }
+    }
+    .recruit__wrapper {
+        width: 88%;
+        .recruit__mv {
+            margin-bottom: 17px;
+        }
+        .ttl {
+            border-bottom: 1px solid #000;
+            ul {
+                li {
+                    width: 64px;
+                    text-align: center;
+                    border-top: 1px solid #000;
+                    border-left: 1px solid #000;
+                    border-right: 1px solid #000;
+                    border-top-left-radius: 8px;
+                    border-top-right-radius: 8px;
+                    padding: 8px 0;
+                    background: #F0F0F0;
+                    font-size: 16px;
+                    &.active {
+                        background-color: #B6C7C7;
+                    }
+                }
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+        .content {
+
+            & > div.hidden {
+                display: none;
+            }
+            dl {
+                font-size: 10px;
+                padding-top: 18px;
+                padding-bottom: 18px;
+                border-bottom: 1px solid #000;
+                dt {
+                    font-size: 12px;
+                    margin-bottom: 10px;
+                }
+                dd {
+                    line-height: 2.5em;
+                }
+                &:last-of-type {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+    .min-container {
+        width: 80%;
+        margin-top: 35px;
+        .backto {
+            a {
+                background-color: #F5F0EA;
+                margin-bottom: 35px;
+            }
+            p {
+                font-size: 12px;
+                line-height: 3em;
+            }
+        }
+    }
+}

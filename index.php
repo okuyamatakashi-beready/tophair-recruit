@@ -444,7 +444,7 @@
             <figure>
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/skill.png" alt="" class="w-full mx-auto">
             </figure>
-            <a href="" class="read_more mt-4">
+            <a href="/skill" class="read_more mt-4">
                 <span>VIEW MORE</span>
             </a>
         </section>

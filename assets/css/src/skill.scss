@@ -1,0 +1,187 @@
+@use "./variables";
+@use "./reset";
+@use "./mixins";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#skill {
+    h1 {
+        font-size: 28px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        margin-bottom: 40px;
+        position: relative;
+        z-index: 10;
+        width: 73%;
+        font-family: 'LINESeedJP', sans-serif;
+        span {
+            font-size: 12px;
+            font-family: "kozuka-gothic-pro", sans-serif;
+        }
+    }
+    .skill__mv {
+        padding: 60px 0 50px 0;
+        background: #B6C7C7;
+        figure {
+            width: 80%;
+            text-align: center;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .skillup__point {
+        padding-top: 40px;
+        .content {
+            strong {
+                font-size: 20px;
+                font-family: 'LINESeedJP', sans-serif;
+                text-align: center;
+            }
+            .copy {
+                margin-bottom: 20px;
+                background-image: url(../../../assets/images/feature/kakko.png);
+                background-size: 100%;
+                width: 70%;
+                background-position: center center;
+                background-repeat: no-repeat;
+                padding: 15px 0;
+                p {
+                    font-size: 18px;
+                    text-align: center;
+                    line-height: 1.8;
+                    letter-spacing: 0.1em;
+                }
+            }
+            p.text {
+                font-size: 18px;
+                margin-bottom: 30px;
+                text-align: center;
+                line-height: 2;
+            }
+            ul {
+                width: 90%;
+                margin-bottom: 40px;
+                li {
+                    margin-bottom: 50px;
+                    figure {
+                        figcaption {
+                            p {
+                                background: #000000;
+                                color: #fff;
+                                font-size: 12px;
+                                font-family: 'LINESeedJP', sans-serif;
+                                line-height: 1.4;
+                                color: #fff;
+                                text-align: center;
+                                padding: 15px 0;
+                                width: 80%;
+                                margin: -20px auto 0 auto;
+                                span {
+                                    color: #fff;
+                                    left: 0;
+                                    right: 0;
+                                    top: -20px;
+                                    font-size: 24px;
+                                    font-family: 'LINESeedJP', sans-serif;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .academy {
+        background-color: #EDEAE2;
+        padding-top: 55px;
+        figure.ttl {
+            text-align: center;
+            margin-bottom: 30px;
+            img {
+                width: 284px;
+            }
+        }
+        .academy__wrapper {
+            width: 90%;
+            padding-bottom: 50px;
+            border-bottom: 1px solid #000;
+            overflow: hidden;
+            margin-bottom: 30px;
+            .copy {
+                margin-bottom: 20px;
+                background-image: url(../../../assets/images/feature/kakko.png);
+                background-size: 100%;
+                width: 90%;
+                background-position: center center;
+                background-repeat: no-repeat;
+                font-family: 'LINESeedJP', sans-serif;
+                padding: 15px 0;
+                p {
+                    font-size: 15px;
+                    text-align: center;
+                    line-height: 1.8;
+                    letter-spacing: 0.1em;
+                }
+            }
+            p.text {
+                font-size: 13px;
+                line-height: 2;
+                width: 90%;
+            }
+        }
+        .goodpoint__slider {
+            margin-bottom: 10px;
+            width: 90%;
+            overflow: hidden;
+
+            .navigation {
+                top: 50%;
+                width: 100%;
+                .navigation__wrapper {
+                    width: 100%;
+                }
+            }
+            /* Swiperのデフォルトアイコンを非表示 */
+            .swiper-button-next::after,
+            .swiper-button-prev::after {
+                display: none;
+            }
+
+            /* Nextボタン（右矢印） */
+            .swiper-button-next {
+                background-image: url("../../../assets/images/feature/next.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 16px; /* 画像サイズに合わせて調整 */
+                height: 16px;
+                right: 0px; /* 位置調整 */
+                position: absolute;
+            }
+
+            /* Prevボタン（左矢印） */
+            .swiper-button-prev {
+                background-image: url("../../../assets/images/feature/prev.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 16px; /* 画像サイズに合わせて調整 */
+                height: 16px;
+                left: 0px; /* 位置調整 */
+                position: absolute;
+            }
+
+        }
+    }
+    .min-container {
+        width: 90%;
+        margin: auto;
+        a.insta {
+            display: block;
+            margin-bottom: 50px;
+        }
+    }
+}
