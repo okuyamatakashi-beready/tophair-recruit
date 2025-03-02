@@ -38,9 +38,7 @@
 		<?php wp_head();?>
 	</head>
 <body>
-<header id="header" class="w-full">
 
-</header>
 
 <div id="toggle">
 	<div class="relative">

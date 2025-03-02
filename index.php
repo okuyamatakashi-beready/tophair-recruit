@@ -6,6 +6,7 @@
         <header id="header" class="w-full py-3.6 pl-2.8">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/header_logo.svg" alt="" class="">
         </header>
+        <!-- <?php get_template_part('templates/parts/gnav'); ?> -->
         <!-- <div class="fixed__btn">
             <a href="" class="relative">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/insta_img.jpg" alt="" class="btn">
@@ -462,36 +463,7 @@
             </a>
         </section>
 
-        <section id="news">
-            <div class="container mx-auto">
-                <h2 class="flex">
-                    <span>NEWS & TOPICS</span>
-                    <a href="">ALL POSTS</a>
-                </h2>
-            </div>
-            <div class="news__wrapper mx-auto">
-                <ul>
-                    <li class="pb-2.3">
-                        <a href="">
-                            <span>2023.05.08</span>
-                            <h3>5月ガイダンス情報♪♪</h3>
-                        </a>
-                    </li>
-                    <li class="pb-2.3">
-                        <a href="">
-                            <span>2023.05.08</span>
-                            <h3>5月ガイダンス情報♪♪</h3>
-                        </a>
-                    </li>
-                    <li class="pb-2.3">
-                        <a href="">
-                            <span>2023.05.08</span>
-                            <h3>5月ガイダンス情報♪♪</h3>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
+        <?php get_template_part('templates/parts/news'); ?>
 
         <?php get_template_part('templates/parts/common-slider'); ?>
 

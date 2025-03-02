@@ -63,7 +63,7 @@
                     </a>
                 </li>
                 <li class="mb-2.5">
-                    <a href="" class="flex items-center justify-start">
+                    <a href="/news" class="flex items-center justify-start">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mainRight_arrow.svg" alt="" class="">
                         <span class="block">NEWS</span>
                     </a>

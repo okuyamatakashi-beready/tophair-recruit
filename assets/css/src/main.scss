@@ -759,3 +759,84 @@
 /*-------------------------
     共通
 -------------------------*/
+.mainCenter {
+    #news.single__news {
+        padding-top: 53px;
+        padding-bottom: 50px;
+        .container {
+            border-top: none;
+            padding-top: 0;
+            h2 {
+                margin-bottom: 0;
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+.post {
+    width: 83%;
+    padding-top: 32px;
+    padding-bottom: 40px;
+    .post__wrapper {
+        .ttl {
+            padding-bottom: 30px;
+            border-bottom: 1px dashed #000;
+            margin-bottom: 31px;
+            span.time {
+                font-size: 10px;
+                line-height: 1.5em;
+                line-height: 2.7em;
+            }
+            h1 {
+                font-size: 12px;
+                font-weight: normal;
+            }
+        }
+        .content {
+            p {
+                font-size: 10px;
+                line-height: 2.7em;
+            }
+            img {
+                width: 100%;
+                height: auto;
+                margin: 20px 0;
+            }
+            h3 {
+                font-size: 14px;
+                line-height: 2.7;
+            }
+        }
+    }
+}
+.post__pagenation {
+    width: 100%;
+    padding: 19px 0;
+    background-color: #EDEAE2;
+    .flex {
+        a {
+            display: block;
+            font-size: 12px;
+            color: #000;
+            &:nth-of-type(2) {
+                padding: 0 10px;
+                margin: 0 10px;
+                border-right: 1px solid #000;
+                border-left: 1px solid #000;
+            }
+        }
+    }
+
+}
+
+#gnav {
+    position: fixed;
+    z-index: 5000;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100svh;
+    background-image: url(./../../images/gnav-bg.jpg);
+}

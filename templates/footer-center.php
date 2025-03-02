@@ -81,7 +81,7 @@
                             <span class="block">CROSS TALK</span>
                         </div>
                     </a>
-                    <a href="">
+                    <a href="/news">
                         <div class="flex items-center justify-start">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer__arrow.svg" alt="" class="mr-2.5">
                             <span class="block">NEWS</span>

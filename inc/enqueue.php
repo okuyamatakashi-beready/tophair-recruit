@@ -128,6 +128,15 @@ function theme_enqueue_scripts() {
         );
 
     }
+    if (is_page('news')) { // ページスラッグが 'faq' の場合
+        wp_enqueue_style(
+            'news-css',
+            get_template_directory_uri() . '/assets/css/dist/news.css',
+            [],
+            filemtime(get_template_directory() . '/assets/css/dist/news.css')
+        );
+
+    }
 
     if (is_singular('tophair-interview')) { // ページスラッグが 'faq' の場合
         wp_enqueue_style(

@@ -47,6 +47,8 @@
             </a>
         </div>
 
+        <?php get_template_part('templates/parts/news'); ?>
+
 
 
         <?php get_template_part('templates/parts/common-slider'); ?>
